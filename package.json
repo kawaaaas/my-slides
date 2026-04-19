@@ -1,0 +1,44 @@
+{
+  "name": "slides-kawaaaas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "個人用スライド閲覧サイト slides.kawaaaas",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "oxfmt --write .",
+    "format:check": "oxfmt --check .",
+    "dev": "vite -c website/vite.config.ts",
+    "build:web": "tsc -p tsconfig.website.json && vite build -c website/vite.config.ts",
+    "preview": "vite preview -c website/vite.config.ts",
+    "build:infra": "tsc -p tsconfig.infra.json",
+    "cdk": "cdk --app 'npx ts-node --prefer-ts-exts infra/bin/app.ts'",
+    "synth": "cdk synth --app 'npx ts-node --prefer-ts-exts infra/bin/app.ts'",
+    "deploy": "cdk deploy --app 'npx ts-node --prefer-ts-exts infra/bin/app.ts'",
+    "diff": "cdk diff --app 'npx ts-node --prefer-ts-exts infra/bin/app.ts'"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.180.0",
+    "constructs": "^10.4.0",
+    "source-map-support": "^0.5.21",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-router-dom": "^7.0.0",
+    "react-pdf": "^9.0.0",
+    "react-helmet-async": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "eslint": "^9.0.0",
+    "@eslint/js": "^9.0.0",
+    "typescript-eslint": "^8.0.0",
+    "eslint-cdk-plugin": "^3.0.0",
+    "oxfmt": "^0.45.0",
+    "aws-cdk": "^2.180.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^6.0.0",
+    "ts-node": "^10.9.0"
+  }
+}

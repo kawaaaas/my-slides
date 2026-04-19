@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "sourceMap": true
+  },
+  "exclude": ["node_modules", "dist", "cdk.out"],
+  "references": [
+    { "path": "./tsconfig.website.json" },
+    { "path": "./tsconfig.infra.json" },
+    { "path": "./tsconfig.lambda.json" }
+  ],
+  "files": []
+}
