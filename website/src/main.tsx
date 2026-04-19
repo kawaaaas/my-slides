@@ -1,9 +1,15 @@
-// エントリーポイント（後続タスクで実装）
+// エントリーポイント
+
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { HelmetProvider } from "react-helmet-async";
+import { App } from "./App";
+import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <div>slides.kawaaaas</div>
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </React.StrictMode>,
 );

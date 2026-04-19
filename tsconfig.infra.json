@@ -16,6 +16,6 @@
     "outDir": "./dist/infra",
     "rootDir": "."
   },
-  "include": ["infra/bin/**/*.ts", "infra/lib/**/*.ts"],
+  "include": ["infra/bin/**/*.ts", "infra/lib/**/*.ts", "slides/metadata.ts"],
   "exclude": ["node_modules", "dist", "cdk.out"]
 }

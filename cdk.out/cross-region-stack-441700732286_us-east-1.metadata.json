@@ -1,0 +1,20 @@
+{
+  "/cross-region-stack-441700732286:us-east-1/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/cross-region-stack-441700732286:us-east-1/Default/CrossRegionCodePipelineReplicationBucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CrossRegionCodePipelineReplicationBucketFC3227F2"
+    }
+  ],
+  "/cross-region-stack-441700732286:us-east-1/Default/CrossRegionCodePipelineReplicationBucket/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CrossRegionCodePipelineReplicationBucketPolicyB7BA2BCA"
+    }
+  ]
+}

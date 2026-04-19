@@ -1,0 +1,292 @@
+{
+  "/SlidesPipeline/Production/SlideViewer/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+    {
+      "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+      "data": true
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/AWS679f53fac002430cb0da5b7982bd2287": [
+    {
+      "type": "aws:cdk:is-custom-resource-handler-singleton",
+      "data": true
+    },
+    {
+      "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+      "data": 0
+    },
+    {
+      "type": "aws:cdk:is-custom-resource-handler-singleton",
+      "data": true
+    },
+    {
+      "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+      "data": 0
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Custom::CrossRegionStringParameterReaderCustomResourceProvider": [
+    {
+      "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
+      "data": true
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C": [
+    {
+      "type": "aws:cdk:is-custom-resource-handler-singleton",
+      "data": true
+    },
+    {
+      "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+      "data": 2
+    },
+    {
+      "type": "aws:cdk:is-custom-resource-handler-singleton",
+      "data": true
+    },
+    {
+      "type": "aws:cdk:is-custom-resource-handler-runtime-family",
+      "data": 2
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/DistributionDomainName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DistributionDomainName"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/BucketName": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BucketName"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/FunctionUrlEndpoint": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "FunctionUrlEndpoint"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Database/SlideMetadataTable": [
+    {
+      "type": "aws:cdk:hasPhysicalName",
+      "data": {
+        "Ref": "DatabaseSlideMetadataTable64C14EE4"
+      }
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/AWS679f53fac002430cb0da5b7982bd2287/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AWS679f53fac002430cb0da5b7982bd22872D164C4C"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Custom::CrossRegionStringParameterReaderCustomResourceProvider/Role": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomCrossRegionStringParameterReaderCustomResourceProviderRole71CD6825"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Custom::CrossRegionStringParameterReaderCustomResourceProvider/Handler": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomCrossRegionStringParameterReaderCustomResourceProviderHandler65B5F33A"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C81C01536"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Storage/SiteBucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StorageSiteBucket6DA49EEA"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketAutoDeleteObjects"
+      }
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Database/SlideMetadataTable/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DatabaseSlideMetadataTable64C14EE4"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/AWS679f53fac002430cb0da5b7982bd2287/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "AWS679f53fac002430cb0da5b7982bd2287ServiceRoleC1EA0FF2"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Api/Function/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ApiFunction6BF808ED"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Api/Function/invoke-function-url": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ApiFunctioninvokefunctionurl3701B602"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Api/Function/invoke-function": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ApiFunctioninvokefunctionB2C08284"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Cdn/ApiCachePolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CdnApiCachePolicyC45676E7"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Cdn/Distribution/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CdnDistribution149FA6C8"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRole89A01265"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Storage/SiteBucket/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StorageSiteBucketPolicy56128B9B"
+    },
+    {
+      "type": "aws:cdk:analytics:mixin",
+      "data": {
+        "mixin": "aws-cdk-lib.aws_s3.mixins.BucketPolicyStatements"
+      }
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Storage/SiteBucket/AutoDeleteObjectsCustomResource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "StorageSiteBucketAutoDeleteObjectsCustomResource21065E22"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Database/PutSlideMetadata0/Resource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DatabasePutSlideMetadata095C1766E"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Database/PutSlideMetadata0/CustomResourcePolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "DatabasePutSlideMetadata0CustomResourcePolicy17BBFAF0"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Api/Function/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ApiFunctionServiceRoleF42E7BB9"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Api/Function/FunctionUrl/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ApiFunctionFunctionUrlFF5ECAE6"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Cdn/OgpEdgeFunction/ArnReader/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CdnOgpEdgeFunctionArnReaderDCF9445C"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Cdn/DeploySite/AwsCliLayer/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CdnDeploySiteAwsCliLayerB45014A6"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Cdn/DeploySite/CustomResource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CdnDeploySiteCustomResourceB0F2634F"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Cdn/DeploySlideAssets/AwsCliLayer/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CdnDeploySlideAssetsAwsCliLayer42B9B782"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Cdn/DeploySlideAssets/CustomResource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CdnDeploySlideAssetsCustomResourceDD2D128A"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Cdn/CloudFrontInvalidation/Resource/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CdnCloudFrontInvalidationC70408DD"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Cdn/CloudFrontInvalidation/CustomResourcePolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CdnCloudFrontInvalidationCustomResourcePolicyD40D3E47"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Custom::CDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756C/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CustomCDKBucketDeployment8693BB64968944B69AAFB0CC9EB8756CServiceRoleDefaultPolicy88902FDF"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Api/Function/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "ApiFunctionServiceRoleDefaultPolicy752F264A"
+    }
+  ],
+  "/SlidesPipeline/Production/SlideViewer/Cdn/Distribution/Origin1/S3OriginAccessControl/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CdnDistributionOrigin1S3OriginAccessControlFA39EED2"
+    }
+  ]
+}

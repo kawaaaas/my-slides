@@ -1,0 +1,36 @@
+{
+  "version": "53.0.0",
+  "files": {
+    "907f3cfb06bd36b4d6ca3e45620c138d54c5075a6db1e405613cdc421793a668": {
+      "displayName": "OgpEdgeFunction/Code",
+      "source": {
+        "path": "../asset.907f3cfb06bd36b4d6ca3e45620c138d54c5075a6db1e405613cdc421793a668",
+        "packaging": "zip"
+      },
+      "destinations": {
+        "441700732286-us-east-1-310e91d4": {
+          "bucketName": "cdk-hnb659fds-assets-441700732286-us-east-1",
+          "objectKey": "907f3cfb06bd36b4d6ca3e45620c138d54c5075a6db1e405613cdc421793a668.zip",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::441700732286:role/cdk-hnb659fds-file-publishing-role-441700732286-us-east-1"
+        }
+      }
+    },
+    "33a4d5c32a20149326d2eed871d0e9d8363d830dd7c66ef8f24bf1ddfd5b266a": {
+      "displayName": "Production-edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a Template",
+      "source": {
+        "path": "SlidesPipelineProductionedgelambdastackc81b871803f5770001ba4fd08d4bb6a5576511818aFC9DE58D.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "441700732286-us-east-1-5c64a8b5": {
+          "bucketName": "cdk-hnb659fds-assets-441700732286-us-east-1",
+          "objectKey": "33a4d5c32a20149326d2eed871d0e9d8363d830dd7c66ef8f24bf1ddfd5b266a.json",
+          "region": "us-east-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::441700732286:role/cdk-hnb659fds-file-publishing-role-441700732286-us-east-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

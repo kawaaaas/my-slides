@@ -1,0 +1,218 @@
+{
+  "/SlidesPipeline/Pipeline": [
+    {
+      "type": "aws:cdk:warning",
+      "data": "V1 pipeline type is implicitly selected when `pipelineType` is not set. If you want to use V2 type, set `PipelineType.V2`. [ack: @aws-cdk/aws-codepipeline:unspecifiedPipelineType]",
+      "trace": [
+        "Annotations.addMessage (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/aws-cdk-lib/core/lib/annotations.js:1:2399)",
+        "Annotations.addWarningV2 (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/aws-cdk-lib/core/lib/annotations.js:1:1087)",
+        "CodePipeline.doBuildPipeline (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/aws-cdk-lib/pipelines/lib/codepipeline/codepipeline.js:1:6843)",
+        "CodePipeline.buildPipeline (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/aws-cdk-lib/pipelines/lib/main/pipeline-base.js:1:3044)",
+        "CodePipeline.buildJustInTime (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/aws-cdk-lib/pipelines/lib/main/pipeline-base.js:1:3111)",
+        "Object.visit (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/aws-cdk-lib/pipelines/lib/main/pipeline-base.js:1:1780)",
+        "recurse (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:2:4719)",
+        "recurse (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:2:4954)",
+        "recurse (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:2:4954)",
+        "invokeAspectsV2 (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:2:3224)",
+        "synthesize (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/aws-cdk-lib/core/lib/private/synthesis.js:1:1990)",
+        "App.synth (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/aws-cdk-lib/core/lib/stage.js:1:3286)",
+        "Object.<anonymous> (/Users/kawasakishouta/Downloads/dev/private/my-slides/infra/bin/app.ts:26:5)",
+        "Module._compile (node:internal/modules/cjs/loader:1554:14)",
+        "Module.m._compile (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/ts-node/src/index.ts:1618:23)",
+        "node:internal/modules/cjs/loader:1706:10",
+        "Object.require.extensions.<computed> [as .ts] (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/ts-node/src/index.ts:1621:12)",
+        "Module.load (node:internal/modules/cjs/loader:1289:32)",
+        "Function._load (node:internal/modules/cjs/loader:1108:12)",
+        "TracingChannel.traceSync (node:diagnostics_channel:322:14)",
+        "wrapModuleLoad (node:internal/modules/cjs/loader:220:24)",
+        "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)",
+        "phase4 (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/ts-node/src/bin.ts:649:14)",
+        "bootstrap (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/ts-node/src/bin.ts:95:10)",
+        "main (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/ts-node/src/bin.ts:55:10)",
+        "Object.<anonymous> (/Users/kawasakishouta/Downloads/dev/private/my-slides/node_modules/ts-node/src/bin.ts:800:3)",
+        "Module._compile (node:internal/modules/cjs/loader:1554:14)",
+        "Object.<anonymous> (node:internal/modules/cjs/loader:1706:10)",
+        "Module.load (node:internal/modules/cjs/loader:1289:32)",
+        "Function._load (node:internal/modules/cjs/loader:1108:12)",
+        "TracingChannel.traceSync (node:diagnostics_channel:322:14)",
+        "wrapModuleLoad (node:internal/modules/cjs/loader:220:24)",
+        "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)",
+        "node:internal/main/run_main_module:36:49"
+      ]
+    }
+  ],
+  "/SlidesPipeline/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/SlidesPipeline/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/SlidesPipeline/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Pipeline/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "Pipeline9850B417"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/CodeBuildActionRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineCodeBuildActionRole226DB0CB"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Pipeline/ArtifactsBucket/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineArtifactsBucketAEA9A052"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Pipeline/Role/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineRoleB27FAA37"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/CodeBuildActionRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineCodeBuildActionRoleDefaultPolicy1D62A6FE"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/UpdatePipeline/SelfMutation/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineUpdatePipelineSelfMutationDAA41400"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Assets/FileRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineAssetsFileRole59943A77"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Assets/FileAsset1/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineAssetsFileAsset185A67CB4"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Assets/FileAsset2/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineAssetsFileAsset24D2D639B"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Assets/FileAsset3/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineAssetsFileAsset3FE71B523"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Assets/FileAsset4/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineAssetsFileAsset474303B7D"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Assets/FileAsset5/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineAssetsFileAsset5184A5C2F"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Assets/FileAsset6/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineAssetsFileAsset669C72F3C"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Assets/FileAsset7/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineAssetsFileAsset7A51C54D0"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Assets/FileAsset8/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineAssetsFileAsset81DAB433B"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Assets/FileAsset9/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineAssetsFileAsset9F08741A2"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Pipeline/ArtifactsBucket/Policy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineArtifactsBucketPolicyF53CCC52"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Pipeline/Role/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineRoleDefaultPolicy7BDC1ABB"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/UpdatePipeline/SelfMutation/Role/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineUpdatePipelineSelfMutationRole57E559E8"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Assets/FileRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineAssetsFileRoleDefaultPolicy14DB8755"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Pipeline/Source/owner_slides-kawaaaas/CodePipelineActionRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineSourceownerslideskawaaaasCodePipelineActionRoleA6BE46EC"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Pipeline/Build/Synth/CdkBuildProject/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineBuildSynthCdkBuildProject6BEFA8E6"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/UpdatePipeline/SelfMutation/Role/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineUpdatePipelineSelfMutationRoleDefaultPolicyA225DA4E"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Pipeline/Source/owner_slides-kawaaaas/CodePipelineActionRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineSourceownerslideskawaaaasCodePipelineActionRoleDefaultPolicy48984B6A"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Pipeline/Build/Synth/CdkBuildProject/Role/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineBuildSynthCdkBuildProjectRole231EEA2A"
+    }
+  ],
+  "/SlidesPipeline/Pipeline/Pipeline/Build/Synth/CdkBuildProject/Role/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "PipelineBuildSynthCdkBuildProjectRoleDefaultPolicyFB6C941C"
+    }
+  ]
+}

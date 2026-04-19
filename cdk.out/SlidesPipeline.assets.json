@@ -1,0 +1,21 @@
+{
+  "version": "53.0.0",
+  "files": {
+    "a089fc682ea611390038308c449048db59999ae138b393c22a3cd2a8eb53d859": {
+      "displayName": "SlidesPipeline Template",
+      "source": {
+        "path": "SlidesPipeline.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "441700732286-ap-northeast-1-7da9c0e7": {
+          "bucketName": "cdk-hnb659fds-assets-441700732286-ap-northeast-1",
+          "objectKey": "a089fc682ea611390038308c449048db59999ae138b393c22a3cd2a8eb53d859.json",
+          "region": "ap-northeast-1",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::441700732286:role/cdk-hnb659fds-file-publishing-role-441700732286-ap-northeast-1"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

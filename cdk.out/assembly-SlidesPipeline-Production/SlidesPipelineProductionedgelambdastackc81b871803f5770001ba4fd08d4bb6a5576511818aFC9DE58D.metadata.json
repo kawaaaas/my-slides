@@ -1,0 +1,50 @@
+{
+  "/SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/BootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "BootstrapVersion"
+    }
+  ],
+  "/SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/CheckBootstrapVersion": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CheckBootstrapVersion"
+    }
+  ],
+  "/SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/OgpEdgeFunction/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "OgpEdgeFunction411FEF68"
+    }
+  ],
+  "/SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/CDKMetadata/Default": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "CDKMetadata"
+    }
+  ],
+  "/SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/OgpEdgeFunction/ServiceRole/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "OgpEdgeFunctionServiceRoleF5111027"
+    }
+  ],
+  "/SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/OgpEdgeFunction/CurrentVersion/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "OgpEdgeFunctionCurrentVersionEAB18B4C5d99870bc35b4872ff96bbb0e591be3c"
+    }
+  ],
+  "/SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/OgpEdgeFunction/Parameter/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "OgpEdgeFunctionParameter71B26F3A"
+    }
+  ],
+  "/SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/OgpEdgeFunction/ServiceRole/DefaultPolicy/Resource": [
+    {
+      "type": "aws:cdk:logicalId",
+      "data": "OgpEdgeFunctionServiceRoleDefaultPolicy01506015"
+    }
+  ]
+}

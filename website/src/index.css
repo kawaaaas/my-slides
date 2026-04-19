@@ -1,0 +1,413 @@
+/* グローバルスタイル - 白地背景、黒文字、モダン・シンプル・レスポンシブ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100dvh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* サイトヘッダー */
+.site-header {
+  padding: 3rem 1.5rem 1.5rem;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #111;
+}
+
+/* スライド一覧 */
+.slide-list-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.slide-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem 0 4rem;
+}
+
+.slide-card {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
+}
+
+.slide-card:hover {
+  border-color: #bbb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transform: translateY(-1px);
+}
+
+.slide-card:active {
+  transform: translateY(0);
+}
+
+.slide-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.slide-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111;
+  line-height: 1.4;
+}
+
+.slide-card-date {
+  font-size: 0.8rem;
+  color: #888;
+  display: block;
+  font-variant-numeric: tabular-nums;
+}
+
+.slide-card-description {
+  font-size: 0.875rem;
+  color: #555;
+  line-height: 1.5;
+  margin-top: 0.25rem;
+}
+
+/* スライド詳細ページ */
+.slide-detail-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.slide-detail-header {
+  padding: 1.5rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.slide-detail-header h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+
+.slide-detail-header time {
+  font-size: 0.8rem;
+  color: #888;
+  font-variant-numeric: tabular-nums;
+}
+
+.back-link {
+  font-size: 0.85rem;
+  color: #666;
+  transition: color 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.back-link:hover {
+  color: #111;
+}
+
+/* スライドビューアー */
+.slide-viewer {
+  margin: 1rem 0 3rem;
+}
+
+.slide-viewer-content {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #fafafa;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Slidevビューアー */
+.slidev-viewer {
+  width: 100%;
+  height: 100%;
+}
+
+.slidev-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* PDFビューアー */
+.pdf-viewer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+}
+
+.pdf-page {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.pdf-loading,
+.pdf-viewer-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #888;
+  font-size: 0.875rem;
+}
+
+/* ナビゲーションコントロール */
+.navigation-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 1rem 0;
+}
+
+.nav-button {
+  padding: 0.5rem 1.25rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.nav-button:hover:not(:disabled) {
+  border-color: #999;
+  background-color: #fafafa;
+  color: #111;
+}
+
+.nav-button:active:not(:disabled) {
+  background-color: #f0f0f0;
+}
+
+.nav-button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.nav-page-indicator {
+  font-size: 0.8rem;
+  color: #888;
+  min-width: 4rem;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 状態表示 */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  color: #888;
+  font-size: 0.875rem;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 240px;
+  gap: 1rem;
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.error button {
+  padding: 0.5rem 1.25rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #333;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.error button:hover {
+  border-color: #999;
+  background-color: #fafafa;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 360px;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.not-found h1 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.not-found p {
+  color: #666;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.not-found .back-link {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.not-found .back-link:hover {
+  border-color: #999;
+  background-color: #fafafa;
+}
+
+.no-slides {
+  text-align: center;
+  color: #888;
+  padding: 4rem 0;
+  font-size: 0.875rem;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+  .site-header {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .site-header h1 {
+    font-size: 1.35rem;
+  }
+
+  .slide-list-page {
+    padding: 0 1rem;
+  }
+
+  .slide-card {
+    padding: 1rem 1.25rem;
+  }
+
+  .slide-card-title {
+    font-size: 0.95rem;
+  }
+
+  .slide-card-description {
+    font-size: 0.825rem;
+  }
+
+  .slide-detail-page {
+    padding: 0 1rem;
+  }
+
+  .slide-detail-header h1 {
+    font-size: 1.1rem;
+  }
+
+  .navigation-controls {
+    gap: 0.75rem;
+  }
+
+  .nav-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .nav-page-indicator {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    padding: 1.5rem 0.75rem 0.75rem;
+  }
+
+  .site-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .slide-list {
+    gap: 0.5rem;
+  }
+
+  .slide-card {
+    padding: 0.875rem 1rem;
+    border-radius: 8px;
+  }
+
+  .slide-detail-header {
+    padding: 1rem 0 0.75rem;
+  }
+
+  .slide-viewer {
+    margin: 0.75rem 0 2rem;
+  }
+
+  .slide-viewer-content {
+    border-radius: 6px;
+  }
+}

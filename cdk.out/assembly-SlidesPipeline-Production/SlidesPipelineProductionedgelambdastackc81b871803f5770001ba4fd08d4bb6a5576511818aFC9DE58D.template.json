@@ -1,0 +1,208 @@
+{
+ "Resources": {
+  "OgpEdgeFunctionServiceRoleF5111027": {
+   "Type": "AWS::IAM::Role",
+   "Properties": {
+    "AssumeRolePolicyDocument": {
+     "Statement": [
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "lambda.amazonaws.com"
+       }
+      },
+      {
+       "Action": "sts:AssumeRole",
+       "Effect": "Allow",
+       "Principal": {
+        "Service": "edgelambda.amazonaws.com"
+       }
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "ManagedPolicyArns": [
+     {
+      "Fn::Join": [
+       "",
+       [
+        "arn:",
+        {
+         "Ref": "AWS::Partition"
+        },
+        ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+       ]
+      ]
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/OgpEdgeFunction/ServiceRole/Resource"
+   }
+  },
+  "OgpEdgeFunctionServiceRoleDefaultPolicy01506015": {
+   "Type": "AWS::IAM::Policy",
+   "Properties": {
+    "PolicyDocument": {
+     "Statement": [
+      {
+       "Action": [
+        "dynamodb:BatchGetItem",
+        "dynamodb:Query",
+        "dynamodb:GetItem",
+        "dynamodb:Scan",
+        "dynamodb:ConditionCheckItem",
+        "dynamodb:DescribeTable"
+       ],
+       "Effect": "Allow",
+       "Resource": [
+        {
+         "Fn::Join": [
+          "",
+          [
+           "arn:",
+           {
+            "Ref": "AWS::Partition"
+           },
+           ":dynamodb:ap-northeast-1:441700732286:table/SlideMetadata"
+          ]
+         ]
+        }
+       ]
+      },
+      {
+       "Action": [
+        "dynamodb:GetRecords",
+        "dynamodb:GetShardIterator"
+       ],
+       "Effect": "Allow",
+       "Resource": [
+        {
+         "Fn::Join": [
+          "",
+          [
+           "arn:",
+           {
+            "Ref": "AWS::Partition"
+           },
+           ":dynamodb:ap-northeast-1:441700732286:table/SlideMetadata"
+          ]
+         ]
+        }
+       ]
+      }
+     ],
+     "Version": "2012-10-17"
+    },
+    "PolicyName": "OgpEdgeFunctionServiceRoleDefaultPolicy01506015",
+    "Roles": [
+     {
+      "Ref": "OgpEdgeFunctionServiceRoleF5111027"
+     }
+    ]
+   },
+   "Metadata": {
+    "aws:cdk:path": "SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/OgpEdgeFunction/ServiceRole/DefaultPolicy/Resource"
+   }
+  },
+  "OgpEdgeFunction411FEF68": {
+   "Type": "AWS::Lambda::Function",
+   "Properties": {
+    "Code": {
+     "S3Bucket": "cdk-hnb659fds-assets-441700732286-us-east-1",
+     "S3Key": "907f3cfb06bd36b4d6ca3e45620c138d54c5075a6db1e405613cdc421793a668.zip"
+    },
+    "FunctionName": "slides-kawaaaas-ogp-edge",
+    "Handler": "index.handler",
+    "MemorySize": 128,
+    "Role": {
+     "Fn::GetAtt": [
+      "OgpEdgeFunctionServiceRoleF5111027",
+      "Arn"
+     ]
+    },
+    "Runtime": "nodejs22.x",
+    "Timeout": 5
+   },
+   "DependsOn": [
+    "OgpEdgeFunctionServiceRoleDefaultPolicy01506015",
+    "OgpEdgeFunctionServiceRoleF5111027"
+   ],
+   "Metadata": {
+    "aws:cdk:path": "SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/OgpEdgeFunction/Resource",
+    "aws:asset:path": "../asset.907f3cfb06bd36b4d6ca3e45620c138d54c5075a6db1e405613cdc421793a668",
+    "aws:asset:is-bundled": true,
+    "aws:asset:property": "Code"
+   }
+  },
+  "OgpEdgeFunctionCurrentVersionEAB18B4C5d99870bc35b4872ff96bbb0e591be3c": {
+   "Type": "AWS::Lambda::Version",
+   "Properties": {
+    "FunctionName": {
+     "Ref": "OgpEdgeFunction411FEF68"
+    }
+   },
+   "Metadata": {
+    "aws:cdk:path": "SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/OgpEdgeFunction/CurrentVersion/Resource",
+    "aws:cdk:do-not-refactor": true
+   }
+  },
+  "OgpEdgeFunctionParameter71B26F3A": {
+   "Type": "AWS::SSM::Parameter",
+   "Properties": {
+    "Name": "/cdk/EdgeFunctionArn/ap-northeast-1/SlidesPipeline/Production/SlideViewer/Cdn/OgpEdgeFunction",
+    "Type": "String",
+    "Value": {
+     "Ref": "OgpEdgeFunctionCurrentVersionEAB18B4C5d99870bc35b4872ff96bbb0e591be3c"
+    }
+   },
+   "Metadata": {
+    "aws:cdk:path": "SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/OgpEdgeFunction/Parameter/Resource"
+   }
+  },
+  "CDKMetadata": {
+   "Type": "AWS::CDK::Metadata",
+   "Properties": {
+    "Analytics": "v2:deflate64:H4sIAAAAAAAA/z2O3QqCQBCFn8X7dTKtB8ig60joVsZ1klF3hZ01Cdl3D3/q6vvOgQMnhfScQBLhJLGuu7jnCubCo+4UTlLOPZqqRphvo9WeB6uuL/v3JznZu12DYjQwP4aelnblfehZf5a4WVCSlShCXuCyQEkG+ag78jkKKRGzXHBsmzs6NOTJretfCEGtu8Jjw7YJyg41QSuHd5rC8QRJ1Apz7Ebr2RA8Nn4BM1aAmeoAAAA="
+   },
+   "Metadata": {
+    "aws:cdk:path": "SlidesPipeline/Production/edge-lambda-stack-c81b871803f5770001ba4fd08d4bb6a5576511818a/CDKMetadata/Default"
+   }
+  }
+ },
+ "Parameters": {
+  "BootstrapVersion": {
+   "Type": "AWS::SSM::Parameter::Value<String>",
+   "Default": "/cdk-bootstrap/hnb659fds/version",
+   "Description": "Version of the CDK Bootstrap resources in this environment, automatically retrieved from SSM Parameter Store. [cdk:skip]"
+  }
+ },
+ "Rules": {
+  "CheckBootstrapVersion": {
+   "Assertions": [
+    {
+     "Assert": {
+      "Fn::Not": [
+       {
+        "Fn::Contains": [
+         [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+         ],
+         {
+          "Ref": "BootstrapVersion"
+         }
+        ]
+       }
+      ]
+     },
+     "AssertDescription": "CDK bootstrap stack version 6 required. Please run 'cdk bootstrap' with a recent version of the CDK CLI."
+    }
+   ]
+  }
+ }
+}
